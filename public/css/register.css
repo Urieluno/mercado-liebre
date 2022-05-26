@@ -57,19 +57,12 @@ main{
     margin-top: 15px;
 }
 
-.com-ven{
-    margin-bottom: 15px;
+.com-ven input{
     margin-right: 15px;
 }
 
-.com-ven input{
-    margin-right: 10px;
-    margin-right: 10px;
-}
-
 .com-ven span{
-    margin-right: 10px;
-    margin-right: 10px;
+margin-right: 15px;
 }
 
 .intereses{
@@ -92,6 +85,11 @@ main{
   margin-bottom: 20px;
 }
 
+#boton:hover{
+    color: #fff;
+    background-color: #0022AA;
+}
+
 .boton-enviar button{
     padding: 10px;
     text-decoration: none;
@@ -110,6 +108,18 @@ main{
 
     .input-hijo1 input{
     max-width: 800px;
+    }
+
+    main .int{
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    main .com-ven{
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: left;
     }
    
 }
