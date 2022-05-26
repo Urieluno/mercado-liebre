@@ -3,6 +3,8 @@ const path = require('path');
 
 const app = express();
 
+app.use(express.urlencoded({extended:false}));
+
 //Servidor
 app.listen(8080, () => {
 console.log('Servidor corriendo correctamente en el puerto 8080')})
@@ -17,6 +19,10 @@ app.get('/', (req, res) => {
 
 app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/register.html'));
+});
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/login.html'));
 });
 
 app.post("/datos",(req, res)=>{
