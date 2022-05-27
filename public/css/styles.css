@@ -221,6 +221,7 @@ article .main-article {
     transform: rotate(-360deg);
 }
 
+
 main section h3 {
     margin: 20px 0px;
 }
@@ -273,11 +274,16 @@ footer .items section p {
     margin: 15px 0px 0px;
 }
 
-footer .items section .iconos {
+footer .iconos {
     color: blue;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 25px;
     width: 50px;
+    transition: 1s;
+}
+
+footer .iconos:hover{
+    color: #EAC926;
 }
 
 .copyright{
