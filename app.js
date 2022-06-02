@@ -5,9 +5,12 @@ const app = express();
 
 app.use(express.urlencoded({extended:false}));
 
+const port = process.env.PORT || 3000;
+
 //Servidor
-app.listen(8080, () => {
-console.log('Servidor corriendo correctamente en el puerto 8080')})
+app.listen(port, () => {
+    console.log('up and running at port ${port}')
+});
 
 //Static
 app.use(express.static(path.join(__dirname, 'public')));
@@ -28,4 +31,3 @@ app.get('/login', (req, res) => {
 app.post("/datos",(req, res)=>{
     res.send(req.body);
     })
-    
